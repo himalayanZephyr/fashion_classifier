@@ -1,0 +1,48 @@
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='../static/style.css'>
+    <script src='../static/client.js'></script>
+</head>
+<body>
+<div>
+    <div class='center'>
+        <div class='title'>Classify Fashion Images </div>
+        <p>
+            Use images of people wearing some clothes. No nudes please!
+        </p>
+        <div class='content'>
+            <div class='no-display'>
+                <input id='file-input'
+                       class='no-display'
+                       type='file'
+                       name='file'
+                       accept='image/*'
+                       onchange='showPicked(this)'>
+            </div>
+            <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+            <div class='upload-label'>
+                <label id='upload-label'>No file chosen</label>
+            </div>
+            <div>
+                <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+            </div>
+            <div class='analyze'>
+                <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+            </div>
+	    <div class="parent">
+		<figure class='child1'>
+                	<img id='image-result' class='no-display' alt='Result Image' height='200'>
+                	<figcaption id='result-label'></figcaption>
+		</figure>
+            	
+	    	<figure class='child2'>
+                	<img id='image-result2' class='no-display' alt='Result Image' height='200'>
+                	<figcaption id='result-label2'></figcaption>
+            	</figure>
+	    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
