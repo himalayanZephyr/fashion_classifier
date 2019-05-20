@@ -26,5 +26,5 @@ Following code projects were helpful for this implementation:
 * To run: ```python app/server.py```
 
 ### To note:
-* The models were trained on Alexnet architecture. (_TODO : explore with deeper architectures and see if gradcam visualizaitons improve_)
+* The models were trained on Alexnet architecture. (_TODO : explore with deeper architectures and see if gradcam visualizations improve_)
 * only single label classification was done although many pictures in DeepFashion have multiple fashion items in a given single image. (_TODO : do multilabel classification_)
